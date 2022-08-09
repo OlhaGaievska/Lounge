@@ -1,0 +1,28 @@
+@media (max-width:360px){
+.header_heading p{
+    font-size: 10px;     
+    line-height: 20px; 
+}
+.header_nav{   
+    font-size: 10px;  
+}
+.header_menu{    
+    width: 60%;
+    height: 100%;  
+    list-style: none;
+    display: flex;
+    flex-direction: column;          
+}
+.header_text_main_text{
+    font-size:18px;
+}
+.mouse_photo{
+    width: auto;
+    height: 4%;
+}
+
+.header_text{
+    font-size: 8px;
+}
+
+}
