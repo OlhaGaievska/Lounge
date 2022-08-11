@@ -133,11 +133,11 @@ html, body{
 }
 .flat{  
     width: auto;  
-    height: 100%;
+    height: auto;
     background-color: #242B33;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;    
 }
 .flat_list_category{
     width: 50%;
@@ -185,7 +185,8 @@ h2{
      
 }
 .flat_list_photo_flat_one{
-    
+    width: 53vh;
+    height:32vh;
     background-image: url(img/flat1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -195,7 +196,8 @@ h2{
 }
 
 .flat_list_photo_flat_two{
-    
+    width: 53vh;
+    height:32vh;
     background-image: url("img/flat2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,7 +206,8 @@ h2{
     padding: 0em 0em 4em 4em;
 }
 .flat_list_photo_flat_thee{
-    
+    width: 53vh;
+    height:32vh;
     background-image: url("img/flat1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +216,8 @@ h2{
     padding: 0em 0em 4em 4em; 
 }
 .flat_list_photo_flat_four{
-    
+    width: 53vh;
+    height:32vh;
     background-image: url("img/flat2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,7 +238,7 @@ h2{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto; 
+    margin: 0 auto;    
 }
 .inform_inform span{
     width: 50%;
@@ -260,7 +264,7 @@ h2{
 
 .inform_main span{
     width: 45%;
-    height: 40%;    
+    height: 100%;    
     font-size: 12px;
     line-height: 20px;
     display: block;
