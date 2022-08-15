@@ -1,11 +1,14 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
 
+@font-face {
+    font-family: "Raleway";
+    src: url(Fonts/Raleway-Regular.ttf) format('truetype');}
+    
 *{
     padding: 0;
     margin: 0;
     border: 0;
-    font-family: 'Prata', serif;
+    font-family: 'Raleway';
     color: white;
 }
 
@@ -25,8 +28,7 @@ html, body{
     max-height: 20%;       
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
     align-content: center;
     padding-top: 2%;
 }
@@ -68,22 +70,24 @@ html, body{
 }
 .main_main{
     width: 100%;
-    height: 100%;
-    background-image: url("img/Rectangle.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: auto;
+    
 }
 .text{
     width: auto;
-    height: 100%;      
+    height: 100vh;      
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align:  center;    
-    font-size:16px;      
+    font-size: 20px;
+    background-image: url("img/Rectangle.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;      
 }
 .text_main_text{
+    margin-top: 5em;  
     font-size:48px;
     color: rgba(212, 193, 127);
     font-weight:700;
@@ -117,174 +121,206 @@ html, body{
 }
 .adress_photo{
     width: 1em;       
-    height: 1.5em;    
-    padding-right: 2%;
+    height: 1em;    
+    padding-right: 6%;
 }
 .tel_photo{  
     width: 1em;       
-    height: 1.5em;    
-    padding-right: 2%;
+    height: 1em;    
+    padding-right: 6%;
 }
 
 .main_flat{
     width: 100%;
-    height: 100%;
+    height: 180vh;
 
 }
 .flat{  
-    width: auto;  
-    height: auto;
+    width: 100%;  
+    height: 100%;
     background-color: #242B33;
     display: flex;
     flex-direction: column;
     align-items: center;    
 }
 .flat_list_category{
-    width: 50%;
-    height: auto;
+    width: 60%;
+    height:30vh;
     display: flex;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 300;
     text-align: center;
     align-items: center;
     justify-content: center;          
 }
 .flat_list_category_block{
-    width: 20%;
+    width: 20%;   
     height: 50%;
 }
 
 .category_photo{
     max-width: 100%;
-    min-width: 30%;
+    min-width: 20%;    
     height: auto;
 }
 .flat_list_category_block p{
     margin-top: 15%;
 }
 
-h2{
+ h2{
     color: rgba(212, 193, 127);
-    font-size:36px;    
-    font-weight:700;      
-    margin:2em 27em 2em 0em;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 1.5em 0em;    
 }
 
 .flat_list_photo{    
     width: 70%;
-    height: 100%;
-    display: grid;
-    gap: 5%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 2;    
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
-    font-size:18px;
+    height: 100vh;    
+    margin: 2.5em 0;
+   
      
 }
+.flat_list_photo_photo{    
+    width: 100%;
+    height: 90%;    
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    font-size: 24px;
+    
+}
+
 .flat_list_photo_flat_one{
-    width: 53vh;
-    height:32vh;
+    
     background-image: url(img/flat1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    padding: 0em 0em 4em 4em;
+    padding: 0em 0em 2em 2em;
 }
 
 .flat_list_photo_flat_two{
-    width: 53vh;
-    height:32vh;
+    
     background-image: url("img/flat2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    padding: 0em 0em 4em 4em;
+    padding: 0em 0em 2em 2em;
 }
 .flat_list_photo_flat_thee{
-    width: 53vh;
-    height:32vh;
+    
     background-image: url("img/flat1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    padding: 0em 0em 4em 4em; 
+    padding: 0em 0em 2em 2em; 
 }
-.flat_list_photo_flat_four{
-    width: 53vh;
-    height:32vh;
+.flat_list_photo_flat_four{    
     background-image: url("img/flat2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
-    padding: 0em 0em 4em 4em;
+    padding: 0em 0em 2em 2em;
 }
 
 .inform{   
     width: 100%;
-    height: 100%; 
+    height: 50vh; 
     background-image: url("img/inform.jpg");
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;
+    display: flex;
+    align-items: center;  
 }
-.inform_inform{
+
+.inform_block{
     width: 70%;
     height: 100%;
     display: flex;
+    margin: 0 auto;
+    flex-direction: column;  
+}
+.inform_block h2{
+    width: 100%;
+    height: 10%;
+    margin-top: 4em;
+}   
+.inform_inform{
+    width: 100%;
+    height: 90%;
+    display: flex;
     justify-content: space-between;
-    margin: 0 auto;    
+    margin: 0 auto;
+    align-items: flex-start;    
 }
 .inform_inform span{
-    width: 50%;
-    height: 100%;
-    font-size: 16px;
-    line-height: 30px;    
+    width: 45%;
+    height: 50%;
+    font-size: 18px;
+    line-height: 24px;    
     text-align: justify;
 }
 .inform_main{
-    width: 35%;
-    height: 70%;
+    width: 50%;
+    height: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;    
     align-content: space-between;
 }
 
-
-.inform_main input{
-    padding: 1em 1em;
-    background:rgba(255, 255, 255, 0.1);
+.inform_main_upper{
+    width: 45%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
 }
 
-.inform_main span{
+.inform_main_lower{
     width: 45%;
-    height: 100%;    
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    align-content: space-between;
+    flex-direction: column;
+}
+.inform_main input{
+    padding: 1em 1em;
+    background:rgba(255, 255, 255, 0.1);    
+}
+
+.inform_main_upper span{
+    width: 100%;       
     font-size: 12px;
     line-height: 20px;
-    display: block;
+    display: flex;
+    flex-direction: column;
     
 }
 
-.inform_main button{
-    width: 15em;
-    height: 3.5em;
+.inform_main_lower button{   
+    padding: 1em 0;
     background: rgba(212, 193, 127);
 }
 .footer_main{
     width: 100%;
-    height: 100%;
+    height: 30vh;
     background: #242B33;
     display: flex;
     flex-direction: row;
     align-content: stretch;
     justify-content: space-around;
-    font-size:13px;
+    font-size:14px;
     line-height: 30px;
     align-items: center;    
 }
